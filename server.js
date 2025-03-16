@@ -1,5 +1,5 @@
 // Setup empty JS object to act as endpoint for all routes
-projectData = {};
+let projectData = {};
 
 // Require Express to run server and routes
 const express = require("express");
@@ -23,7 +23,7 @@ app.use(cors());
 app.use(express.static("website"));
 
 // Setup Server
-const PORT = 8000;
+const PORT = 5000;
 const server = app.listen(PORT, listen);
 function listen() {
   console.log(`Server running on http://localhost:${PORT}`);
